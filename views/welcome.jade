@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{product}
+  form(name='register', action='/', method='post')
+    div.inputs
+      span.label Enter your ZIP code to continue 
+      input(type='Number', name='zip', pattern='^\d{5}$')
+    div.actions
+      input(type='submit', value='continue')
