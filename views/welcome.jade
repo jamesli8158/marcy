@@ -5,7 +5,7 @@ block content
   p Welcome to #{product}
   form(name='register', action='/', method='post')
     div.inputs
-      span.label Enter your ZIP code to continue 
-      input(type='Number', name='zip', pattern='^\d{5}$')
+      span.label Enter your 5 digit US Postal Code to continue 
+      input(type='text', name='zip', pattern='^\\d{5}$', required title='5 digit zip code', maxlength=5)
     div.actions
       input(type='submit', value='continue')
