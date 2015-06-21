@@ -2,4 +2,18 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  header
+    nav
+      ul
+        li
+          a(href="./category/vegetable") Vegetables
+        li
+          a(href="./category/flower") Flowers
+        li
+          a(href="./category/fruit") Fruits
+        li
+          a(href="./category/tree") Trees
+        li
+          a(href="./category/shrub") Shrubs
+      
+  p Welcome to #{product}
